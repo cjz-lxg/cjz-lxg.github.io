@@ -1,3 +1,13 @@
 theme: jekyll-theme-cayman
 title: 欢迎来到我的博客
 description: 博客用于记录我的学习生活
+lsi: false
+safe: true
+source: [your repo's top level directory]
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
