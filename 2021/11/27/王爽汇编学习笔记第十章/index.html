@@ -6,13 +6,20 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+  <meta name="description" content="王爽汇编学习笔记第十章 检测点10.1的意思是,让你直接用直接数,让retf直接通过栈中数据跳转,前面是初始化栈的过程  注意,call 标号,只是将ip的值压入栈中,cs的值并没有被压入栈中  10.2检测点注意到7就结束了,没有返回到call ret 这一步  10.3检测点的答案为1010H,可以这么看,因为call far ptr s的机器码有5个字节,则读取执行前ip的值变为8,即增加了">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/2021/11/27/%E7%8E%8B%E7%88%BD%E6%B1%87%E7%BC%96%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E7%AC%AC%E5%8D%81%E7%AB%A0/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="王爽汇编学习笔记第十章 检测点10.1的意思是,让你直接用直接数,让retf直接通过栈中数据跳转,前面是初始化栈的过程  注意,call 标号,只是将ip的值压入栈中,cs的值并没有被压入栈中  10.2检测点注意到7就结束了,没有返回到call ret 这一步  10.3检测点的答案为1010H,可以这么看,因为call far ptr s的机器码有5个字节,则读取执行前ip的值变为8,即增加了">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:/Users/18960/AppData/Roaming/Typora/typora-user-images/image-20211202180520238.png">
+<meta property="og:image" content="c:/Users/18960/AppData/Roaming/Typora/typora-user-images/image-20211202180649983.png">
+<meta property="article:published_time" content="2021-11-27T13:37:23.515Z">
+<meta property="article:modified_time" content="2021-12-02T11:42:19.825Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:/Users/18960/AppData/Roaming/Typora/typora-user-images/image-20211202180520238.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -69,70 +76,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/12/03/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2021-12-03T08:45:10.774Z" itemprop="datePublished">2021-12-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="欢迎来到我的博客"><a href="#欢迎来到我的博客" class="headerlink" title="欢迎来到我的博客"></a>欢迎来到我的博客</h1><p>该博客主要用于学习方面的分享当然也有我的一些牢骚话</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/12/03/hello-world/" data-id="ckwq6q9gd0001vwv015l46h7o" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-2021.11.28无聊的小知识" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/11/29/2021.11.28%E6%97%A0%E8%81%8A%E7%9A%84%E5%B0%8F%E7%9F%A5%E8%AF%86/" class="article-date">
-  <time class="dt-published" datetime="2021-11-29T06:16:36.671Z" itemprop="datePublished">2021-11-29</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="2021-11-28无聊的小知识"><a href="#2021-11-28无聊的小知识" class="headerlink" title="2021.11.28无聊的小知识"></a>2021.11.28无聊的小知识</h2><ol>
-<li>window中有些软件添加自己到命令行里的时候,不是在用户那里添加的,而是在系统那里添加(软件自动配置环境变量)</li>
-<li>在命令行下载文件的时候,你用某个.exe文件下载的时候,如果 你的文件夹里没有,去那个.exe文件所在文件夹看看,说不定会有惊喜</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/29/2021.11.28%E6%97%A0%E8%81%8A%E7%9A%84%E5%B0%8F%E7%9F%A5%E8%AF%86/" data-id="ckwq6q9g60000vwv0cz2v099k" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-王爽汇编学习笔记第十章" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-王爽汇编学习笔记第十章" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/11/27/%E7%8E%8B%E7%88%BD%E6%B1%87%E7%BC%96%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E7%AC%AC%E5%8D%81%E7%AB%A0/" class="article-date">
   <time class="dt-published" datetime="2021-11-27T13:37:23.515Z" itemprop="datePublished">2021-11-27</time>
@@ -311,95 +255,28 @@ c
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-王爽汇编第九章学习笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/11/27/%E7%8E%8B%E7%88%BD%E6%B1%87%E7%BC%96%E7%AC%AC%E4%B9%9D%E7%AB%A0%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="article-date">
-  <time class="dt-published" datetime="2021-11-27T10:09:24.951Z" itemprop="datePublished">2021-11-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="王爽汇编第九章学习笔记"><a href="#王爽汇编第九章学习笔记" class="headerlink" title="王爽汇编第九章学习笔记"></a>王爽汇编第九章学习笔记</h1><ol>
-<li><h3 id="上图显示了在计算机中0-1-ffff这个最大值的现象"><a href="#上图显示了在计算机中0-1-ffff这个最大值的现象" class="headerlink" title="上图显示了在计算机中0-1=ffff这个最大值的现象"></a><img src="C:\Users\18960\AppData\Roaming\Typora\typora-user-images\image-20211127163425262.png" alt="image-20211127163425262" style="zoom:50%;" />上图显示了在计算机中0-1=ffff这个最大值的现象</h3></li>
-<li><p>有关于根据位移进行转移的意义:<a target="_blank" rel="noopener" href="https://fishc.com.cn/forum.php?mod=viewthread&amp;tid=105153&amp;page=1#pid3210543">https://fishc.com.cn/forum.php?mod=viewthread&amp;tid=105153&amp;page=1#pid3210543</a></p>
-</li>
-<li><p>实验八:重点关注jmp short s1是表达ip的值本位-8个字节,因为他不是长转移,而是短转移,是直接根据位移算的,它的机器码里没有要跳转到的目标位置的信息</p>
-</li>
-<li><p>有关于nasm用法的意外收获:<a target="_blank" rel="noopener" href="http://www.cppblog.com/myjfm/archive/2011/11/05/159647.asp">http://www.cppblog.com/myjfm/archive/2011/11/05/159647.asp</a></p>
-</li>
-<li><p>有关于实验9,先给代码</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">DATAS SEGMENT</span><br><span class="line">    db &#x27;welcome to masm!&#x27;  </span><br><span class="line">    db 2h,23h,71h</span><br><span class="line">DATAS ENDS</span><br><span class="line">stack segment</span><br><span class="line"> 	dw 10 dup(0)</span><br><span class="line">stack ends</span><br><span class="line"></span><br><span class="line">CODES SEGMENT</span><br><span class="line">    ASSUME CS:CODES,DS:DATAS,SS:stack</span><br><span class="line">START:</span><br><span class="line">    mov ax,datas</span><br><span class="line">    mov ds,ax</span><br><span class="line">    mov ax,0b800h</span><br><span class="line">    mov es,ax</span><br><span class="line">    mov si,40h</span><br><span class="line">    mov di,0</span><br><span class="line">    mov bp,0780h</span><br><span class="line">    mov cx,3</span><br><span class="line">    s1:</span><br><span class="line">    push cx</span><br><span class="line">    mov cx,10h</span><br><span class="line">    s:mov al,byte ptr ds:[bx]</span><br><span class="line">    mov ah,byte ptr ds:[di+10h]</span><br><span class="line">    mov es:[si+bp],ax</span><br><span class="line">    add si,2</span><br><span class="line">    inc bx</span><br><span class="line">    loop s</span><br><span class="line">    mov bx,0</span><br><span class="line">    inc di</span><br><span class="line">    add bp,0a0h</span><br><span class="line">    mov si,40h</span><br><span class="line">    pop cx</span><br><span class="line">    loop s1</span><br><span class="line">    MOV AH,4CH</span><br><span class="line">    INT 21H</span><br><span class="line">CODES ENDS</span><br><span class="line">    END START</span><br></pre></td></tr></table></figure>
+    <a href="/2021/11/29/2021.11.28%E6%97%A0%E8%81%8A%E7%9A%84%E5%B0%8F%E7%9F%A5%E8%AF%86/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/11/27/%E7%8E%8B%E7%88%BD%E6%B1%87%E7%BC%96%E7%AC%AC%E4%B9%9D%E7%AB%A0%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
 
-<p>写这道实验我还是踩过挺多坑的,现在就列一下:</p>
-<ol>
-<li>栈不用你进行初始化,在上面设栈了,程序会自动帮你接过去,不然你的程序可能报错</li>
-<li>直接数类似于abh这样的,只有这么写0abh才是合法,其他会报错</li>
-<li>你不能直接用si进行字节的复制,我试了下,直接报错</li>
-<li>一般这种处理一个字节,可以分解ax为al,ah,然后复制到目标的内存单元,注意高位配高位,低位配低位</li>
-<li>字符串可以通过db ‘jaskdjak’这样在data数据段中直接设置</li>
-<li>因为我在data段里面设置两个,又因为这两个偏移方式有点不太一样,所以不能用相同的寄存器进行同加操作,这里是我原本第24行di是bi</li>
-</ol>
-</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/27/%E7%8E%8B%E7%88%BD%E6%B1%87%E7%BC%96%E7%AC%AC%E4%B9%9D%E7%AB%A0%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-id="ckwq6q9gl0004vwv0fj2m2608" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
-    <article id="post-王爽汇编学习(第三章)" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/11/26/%E7%8E%8B%E7%88%BD%E6%B1%87%E7%BC%96%E5%AD%A6%E4%B9%A0(%E7%AC%AC%E4%B8%89%E7%AB%A0)/" class="article-date">
-  <time class="dt-published" datetime="2021-11-26T10:48:09.410Z" itemprop="datePublished">2021-11-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="王爽汇编学习-第三章"><a href="#王爽汇编学习-第三章" class="headerlink" title="王爽汇编学习(第三章)"></a>王爽汇编学习(第三章)</h2><img src="C:\Users\18960\AppData\Roaming\Typora\typora-user-images\image-20211121115629162.png" alt="image-20211121115629162" style="zoom:63%;" />
-
-<img src="C:\Users\18960\AppData\Roaming\Typora\typora-user-images\image-20211121115714150.png" alt="image-20211121115714150" style="zoom:63%;" />
-
-<p>如图,其实入栈的过程会把原来在栈段里的数据往</p>
-<p><img src="C:\Users\18960\AppData\Roaming\Typora\typora-user-images\image-20211121224114608.png" alt="image-20211121224114608"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/11/26/%E7%8E%8B%E7%88%BD%E6%B1%87%E7%BC%96%E5%AD%A6%E4%B9%A0(%E7%AC%AC%E4%B8%89%E7%AB%A0)/" data-id="ckwq6q9ge0002vwv047crh8ak" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 </section>
